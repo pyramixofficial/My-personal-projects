@@ -1,0 +1,164 @@
+Scrie?i programul pentru a ob?ine urm�toarea afi?are la ecran, utiliz�nd o instruc?iune repetitiv�.    1 2  3 4  5  6 �n
+
+Scrie?i programul pentru a ob?ine urm�toarea afi?are la ecran, utiliz�nd o instruc?iune repetitiv�.    a b c d e ..x y z
+
+Scrie?i programul pentru a ob?ine urm�toarea afi?are la ecran, utiliz�nd o instruc?iune repetitiv�.   A B C D �X Y Z.
+
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+        Aa Bb Cc Dd Ee ..Xx Yy Zz
+
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7 7 8 8 8 8 8 8 8 8  � nnnnnn(de n ori)for i:=1 to n do
+     For j:=1 to i do
+          Write(i);
+
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+1 1 2 1 2 3 1 2 3 4 1 2 3 4 5 1 2 3 4 5 6 1 2 3 4 5 6 71 2 3 4 5 6 7 8� 1 2 3 4 .. n
+
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+         1 1 1 1 1 1 1         2 2 2 2 2 2 2         3 3 3 3 3 3 3         4 4 4 4 4 4 4         5 5 5 5 5 5 5         6 6 6 6 6 6 6         7 7 7 7 7 7 7         8 8 8 8 8 8 8         9 9 9 9 9 9 9    
+Scrie�i programul pentru a ob�ine k r�nduri de tipul:
+      1 2 3 4 5 6 7...n      
+1 2 3 4 5 6 7...n................1 2 3 4 5 6 7...n
+Scrie�i programul pentru a ob�ine k r�nduri de tipul:
+     abcdefghijklmnoprstuvwxyz
+     abcdefghijklmnoprstuvwxyz
+     abcdefghijklmnoprstuvwxyz
+     �
+     Abcdefghijklmnoprstuvwxyz
+
+Scrie�i programul pentru a ob�ine k r�nduri de tipul:
+     A B C �.X Y Z
+     A B C �.X Y Z
+        �
+    A B C �.X Y Z
+
+
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+1
+12
+123
+1234
+12345
+...
+1234...n
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+1
+2 1
+3 2 1
+4 3 2 1
+5 4 3 2 1
+...
+N n-1 n-2 .. 3 2 1
+
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+       1       2 2       3 3 3       4 4 4 4       5 5 5 5 5       6 6 6 6 6 6       7 7 7 7 7 7 7       8 8 8 8 8 8 8 8       9 9 9 9 9 9 9 9 9
+       10 10 10 10 10 10 10 10 10 10
+
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+                            1                           2 2                          3 3 3                        4 4 4 4                       5 5 5 5 5      ...     10 10 10 10 10 10 10 10 10 10
+
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+1111111111
+  22222222
+   111111
+     2222
+       11
+
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+aaaaaaaa      de n ori
+aaaaaa          de n-1 ori
+�
+aaaa
+aa
+a
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+
+aaaaaaaa
+eeeeeeee
+aaaaaa
+eeeeee
+aaaa
+eeee
+aa
+ee
+
+
+Scrie�i programul pentru a ob�ine urm�toarea afi�are la ecran, utiliz�nd o instruc�iune repetitiv�.
+
+aaaaaabbbbbb    de n ori a si n ori b
+aaaaabbbbb de n -1 ori a si n-1 ori b
+
+aaaabbbb
+aaabbb
+aabb
+ab
+
+
+
+
+
+Scrie�i programul pentru a ob�ine afi�area la ecran a urm�torului tabel dreptunghiular, utiliz�nd o instruc�iune repetitiv�.           abcdefghijklm
+           nopqrstuvwxyz
+           abcdefghijklm
+           nopqrstuvwxyz
+           abcdefghijklm
+           nopqrstuvwxyz
+           abcdefghijklm
+           nopqrstuvwxyz
+S� se scrie un program  care cite�te un num�r �ntreg  n �i apoi afi�eaz�:
+    1
+    1 2
+    1 2 3
+    . . . . . . .
+    1 2 3. . .n
+    1 2 3. . .n
+    . . . . . . .
+    1 2 3
+    1 2 
+    1
+Sa se afi?eze numerele naturale divizibile cu 11�mai mici sau egale cu o valoare data n.�
+
+Se cite?te de la tastatur� valoarea variabilelor  a, b ?i c (a < c). Variabila a se m�re?te consecutiv de c�teva ori cu b. S�  se afi?eze de c�te ori s-a ad�ugat la a valoarea lui b p�n� ce a l-a dep�?it pe b.  
+
+Sa se determine toate numerele de forma   divizibile cu un num�r n dat. Cifrele vor fi distincte doua cate doua.�
+
+Afi?a?i separate prin spa?iu toate numerele de 4 cifre, divizibile cu 15 si pentru care suma primelor doua cifre este egala cu 12.
+
+Se dau dou� numere naturale nenule m ?i n. S� se afi?eze to?i divizorii comuni ai acestor numere.� 
+
+Afi?a?i toate numerele prime mai mici sau egale cu un num�r natural n citit de la tastatura.�
+
+Doua numere prime impare consecutive se numesc numere prime gemene. Determina?i toate perechile de numere prime gemene mai mici decat n.�
+
+Afla?i cel mai mic num�r care are exact k divizori.�
+
+Un num�r natural se nume?te perfect daca este egal cu suma divizorilor s�i mai mici dec�t el. Sa se verifice daca un num�r n este perfect sau nu.�
+
+Sa se determine toate numerele perfecte mai mici dec�t 10000.
+
+Se citesc n numere naturale de la tastatura. Sa se determine cu cate zerouri se sf�r?e?te produsul acestora, f�r� a calcula produsul. ��
+
+Un num�r se nume?te num�r narcisist dac� el poate fi scris ca suma cuburilor cifrelor sale: 153 = 13�+ 53�+ 33�. Elabora?i un program care afl� ?i afi?eaz� cu instruc?iunile repetitive toate numerele narcisiste mai mici ca 1000. 
+
+(Remarc�: Doar 6 numere au aceast� proprietate: 0, 1, 153, 370, 371 ?i 407.)
+
+Se d� un num�r natural n. S� se afi?eze toate perechile de numere prietene mai mici ca n.
+ Dou� numere sunt �prietene� (amicable numbers) dac� fiecare num�r din acestea este egal cu suma divizorilor celuilalt num�r, lu�nd �n calcul inclusiv pe 1 ?i excluz�nd num�rul �nsu?i (ca divizor). Numerele peietene sunt considerate simbolul prieteniei (prietenul v�zut ca�alter ego�= cel�lalt eu).
+
+Exemple de astfel de perechi: (220 ?i 284), (1184 ?i 1210), (2620 ?i 2924), (5020 ?i 5564), (6232 ?i 6368) etc...
+
+Explica?ie: Numerele 220 ?i 284 sunt numere prietenie .
+
+Suma divizorilor lui 220 �n afar� de el �ns�?i : 
+
+1+2+ 4 + 5 + 10 + 11 + 20 + 22 + 44 + 55 = 284, 
+
+iar ai lui 284 sunt: 
+
+1 + 2 + 4 + 71 + 142 = 220. 
+
+S� se afi?eze primele n numere din secven?a de numere: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233,� care se  nume?te ?irul Fibonacci. 
+Este vorba despre o secven?� de numere, inventat� de matematicianul italian Leonardo din Pisa, cunoscut sub numele de Fibonacci, care a introdus Europa la sistemul zecimal� ?i cifre arabe.   
+Observa?i c� fiecare num�r �ncep�nd cu al treilea este egal cu suma a dou� numere precedente.
+
