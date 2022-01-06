@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    string sum, new_sum;
+    cin>>sum;
+    for (int i=0; i<sum.size();i++){
+        if(sum[i]!='+'){
+            new_sum.push_back(sum[i]);
+        }
+    }
+    sort(new_sum.begin(), new_sum.end());
+    cout<<new_sum[0];
+    for(int i=1;i<new_sum.size();i++){
+        cout<<'+'<<new_sum[i];
+    }
+    return 0;
+}
