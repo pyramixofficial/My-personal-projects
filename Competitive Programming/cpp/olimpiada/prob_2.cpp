@@ -1,13 +1,34 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool check(char arr[20][20], int nowi, int nowj){
-    bool first, second, third;
-    first = (arr[abs(nowi-1)][abs(nowj-1)] == 'R') and (arr[abs(nowi)][abs(nowj-1)] == 'R') and (arr[abs(nowi+1)][abs(nowj-1)] == 'R');
-    second = (arr[abs(nowi-1)][abs(nowj)] == 'R') and (arr[abs(nowi)][abs(nowj)] == 'N') and (arr[abs(nowi+1)][nowj] == 'R');
-    third = (arr[abs(nowi-1)][abs(nowj+1)] == 'R') and (arr[abs(nowi)][abs(nowj+1)] == 'R') and (arr[abs(nowi+1)][abs(nowj+1)] == 'R');
+bool check(char arr[20][20], int nowi, int nowj, int n, int m){
+    bool first = false;
+    if (arr[abs(nowi-1)][abs(nowj-1)] == 'R'){
+        first = first || true;
+    }
+    if (arr[abs(nowi)][abs(nowj-1)] == 'R'){
+        first = first && true;
+    }
+    if (nowi+1<n && arr[abs(nowi+1)][abs(nowj-1)] == 'R'){
+        first = first && true;
+    }
+    if (arr[abs(nowi-1)][abs(nowj)] == 'R'){
+        first = first && true;
+    }
+    if (nowi+1<n && arr[abs(nowi+1)][nowj] == 'R'){
+        first = first && true;
+    }
+    if (nowj+1<m && arr[abs(nowi-1)][abs(nowj+1)] == 'R'){
+        first = first && true;
+    }
+    if (nowj+1<m && arr[abs(nowi)][abs(nowj+1)] == 'R'){
+        first = first && true;
+    }
+    if (nowi+1<n && nowj+1<m && arr[abs(nowi+1)][abs(nowj+1)] == 'R'){
+        first = first && true;
+    }
 
-    return  first and second and third;
+    return  first;
 }
 
 int main(){
@@ -25,8 +46,10 @@ int main(){
 
     for (i = 0; i<n; i++){
         for (j = 0; j<m; j++){
-            if (check(arr, i, j)){
-                k += 10;
+            if (arr[i][j] == 'N'){
+                if (check(arr, i, j, n, m)){
+                        k += 10;
+                }
             }
         }
     }
@@ -35,3 +58,4 @@ int main(){
     fout.close();
     return 0;
 }
+
