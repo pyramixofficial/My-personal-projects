@@ -97,6 +97,7 @@ def start_process(input_text : str):
         #setting the defining limits of the tweets
         c.Limit = 500                  
         c.Links = "exclude"
+        c.Store_object = True
         c.Lang = "en" 
         c.Min_likes = 2
         c.Min_retweets = 2
@@ -107,7 +108,6 @@ def start_process(input_text : str):
         # Run
         c.Hide_output = True
         twint.run.Search(c)
-
         #creating a dataframe with the tweets
         df = twint.storage.panda.Tweets_df  
         
@@ -143,9 +143,9 @@ def start_process(input_text : str):
 
 
     #Reading the Sentiment Analysis module, memorized in the joblib file
-    rf = joblib.load(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\SA_module.joblib')
+    rf = joblib.load(r'D:\My-personal-projects\My-personal-projects\Natural Language Processing\Telegram bot\Code\SA_module.joblib')
     #Reading the Count Vectorizer module, memorized in the joblib file
-    bow = joblib.load(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\bow.joblib')
+    bow = joblib.load(r'D:\My-personal-projects\My-personal-projects\Natural Language Processing\Telegram bot\Code\bow.joblib')
 
     #pre-processing the twitter dataframe
     space = bow.transform(twitter_sentiment_analyze(submission))
@@ -211,7 +211,7 @@ def start_process(input_text : str):
         positive = list(dataframe.head(n = 3)[tweet])
         negative = list(dataframe.tail(n = 3)[tweet])
         top = {'Top pozitive comments':positive, 'Top negative comments':negative}
-        cls = joblib.load(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\cls.joblib')
+        cls = joblib.load(r'D:\My-personal-projects\My-personal-projects\Natural Language Processing\Telegram bot\Code\cls.joblib')
         gender = []
         #Using the trained model it predicts the positivity of the comments
         for i in Dataframe['name']:

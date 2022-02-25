@@ -89,7 +89,7 @@ def trading(word_input: str):
     last_year = _history_all[_history_all['date'] >= old_str]
     last_year = last_year.set_index('date')
     last_year.plot(title = text, figsize = (15, 10))
-    plt.savefig(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\plot.png')
+    plt.savefig(r'D:\My-personal-projects\My-personal-projects\Natural Language Processing\Telegram bot\Code\plot.png')
 
     _countries = _region.drop(_region.columns[0], axis = 1)
     df_final_dict = pd.DataFrame(final_dict)
@@ -105,7 +105,7 @@ def trading(word_input: str):
 
     _region.to_csv('data.csv')
 
-    shapefile = r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\110m_cultural\ne_110m_admin_0_countries.shp'
+    shapefile = r'D:\My-personal-projects\My-personal-projects\Natural Language Processing\Telegram bot\Code\ne_110m_admin_0_countries.shp'
 
     #Reading the shapefile using Geopandas
     gdf = gpd.read_file(shapefile)[['ADMIN', 'ADM0_A3', 'geometry']]
@@ -248,4 +248,4 @@ def trading(word_input: str):
     ax.set_title('World relative search interest of %s in 2021' %word_input, fontdict = {'fontsize':40})
     ax.set_axis_off()
     #Saving the png file to the folder
-    plt.savefig(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\trend_map.png')
+    plt.savefig(r'D:\My-personal-projects\My-personal-projects\Natural Language Processing\Telegram bot\Code\trend_map.png')

@@ -105,10 +105,10 @@ def gender(update:Update, context:CallbackContext):
         The object of the class that dispatches all kinds of updates to its registered handlers
     """
     #Sending the png files to the user
-    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\Nr_comments.png', 'rb'))
-    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\Nr_gender_comments.png', 'rb'))
-    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\Nr_men_comments.png', 'rb'))
-    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\Nr_woman_comments.png', 'rb'))
+    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'Nr_comments.png'))
+    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'Nr_gender_comments.png'))
+    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'Nr_men_comments.png'))
+    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'Nr_woman_comments.png'))
 
     meniu(update, context)
 
@@ -122,8 +122,8 @@ def trend(update:Update, context:CallbackContext):
     """
 
     #Sending the png files to the user
-    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\trend_map.png', 'rb'))
-    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\plot.png', 'rb'))
+    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'trend_map.png'))
+    bot.send_photo(chat_id=update.effective_chat.id, photo=open(r'plot.png'))
 
     meniu(update, context)
 
@@ -136,7 +136,7 @@ def alternative(update:Update, context:CallbackContext):
         The object of the class that dispatches all kinds of updates to its registered handlers
     """
     #Sending the information about the alternatives to the user
-    text_file = open(r"F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\alternatives.txt", "r")
+    text_file = open(r"alternatives.txt", "r")
     alternative_information = text_file.read()
     bot.send_message(chat_id=update.effective_chat.id, text = alternative_information )
 
@@ -151,7 +151,7 @@ def top(update:Update, context:CallbackContext):
         The object of the class that dispatches all kinds of updates to its registered handlers
     """
     #Sending the information about the top positive and negative comments to the user
-    top3_information = json.load(open(r"F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\top3.txt", "r", encoding='utf8'))
+    top3_information = json.load(open(r"top3.txt", "r", encoding='utf8'))
     top3_final_values = ''
     i=1
     #Creating the string version of the dict
@@ -174,7 +174,7 @@ def definition(update:Update, context:CallbackContext):
         The object of the class that dispatches all kinds of updates to its registered handlers
     """
     #Sending the definition of the product to the user
-    text_file = open(r"F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\definition.txt", "r")
+    text_file = open(r"definition.txt", "r")
     alternative_information = text_file.read()
     bot.send_message(chat_id=update.effective_chat.id, text = alternative_information )
 
@@ -201,7 +201,7 @@ def export(update:Update, context:CallbackContext):
         The object of the class that dispatches all kinds of updates to its registered handlers
     """
     #Sending a csv file with all the tweets gone through the sentiment analysis process
-    test_data = pd.read_csv(r'F:\Eduard\Autodezvoltare\NLP camp\final version\NLPC-main\bot\Code\result.csv')
+    test_data = pd.read_csv(r'result.csv')
 
     # csv module can write data in io.StringIO buffer only
     s = io.StringIO()
