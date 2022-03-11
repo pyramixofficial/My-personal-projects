@@ -37,7 +37,7 @@ st.write('# Trash type Detection')
 ## Pull in default image or user-selected image.
 if uploaded_file is None:
     # Default image.
-    url = 'https://github.com/matthewbrems/streamlit-bccd/blob/master/BCCD_sample_images/BloodImage_00038_jpg.rf.6551ec67098bc650dd650def4e8a8e98.jpg?raw=true'
+    url = 'https://github.com/pyramixofficial/My-personal-projects/blob/main/ML%20-%20Trash%20Categorizing/BCCD_sample_images/trash_img.jpg?raw=true'
     image = Image.open(requests.get(url, stream=True).raw)
 
 else:
