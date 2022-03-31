@@ -7,9 +7,8 @@ import torch
 import numpy as np
 import cv2
 from matplotlib import cm
-help(Image)
 #Import the model and the weights
-model = torch.hub.load(r'D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\yolov5-master', 'custom', path=r'D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\yolov5 training weights\second.pt', source = 'local', force_reload=True)
+model = torch.hub.load(r"D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\yolov5-master", 'custom', path=r"D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\yolov5 training weights\second.pt", source = 'local', force_reload=True)
 
 
 ##########
@@ -17,8 +16,10 @@ model = torch.hub.load(r'D:\My-personal-projects\My-personal-projects\ML - Trash
 ##########
 
 # Add in location to select image.
+logo = Image.open(r'D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\imagees\tekwill_logo.png')
+st.sidebar.image(logo, use_column_width=True)
 st.sidebar.write('#### Select the app mode you want to use.')
-mode = ["Photo", "Camera detection", "About"]
+mode = ["About", "Photo", "Camera detection"]
 choice = st.sidebar.selectbox("Select Activity", mode)
 if choice == "Photo":
     st.sidebar.write('#### Select an image to upload.')
@@ -33,6 +34,7 @@ if choice == "Photo":
 
     ## Title.
     st.write('# Trash type Detection')
+
 
     ## Pull in default image or user-selected image.
     if uploaded_file is None:
@@ -50,7 +52,7 @@ if choice == "Photo":
     #Processing and saving the image 
     image_result = model(image, size = 640)
     image_result.save(save_dir = r'D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\results')
-
+    print(help(image_result.render))
     #Opening the saved image
     result_image = Image.open(r'D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\results\image0.jpg')
     
@@ -71,7 +73,14 @@ elif choice == "Camera detection":
     while run:
         ret, frame = cam.read()
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        print(type(model(frame, size=640)))
-        FRAME_WINDOW.image()
+        frame = model(frame, size=640)
+        FRAME_WINDOW.image(frame.render())
     else:
         st.write('Stopped')
+
+
+elif choice == "About":
+    st.write("# Tekwill Junior Ambassadors ")
+    st.write("### This is a project created by Eduard Balamatiuc and Daria Gheorghieș")
+    st.write("### The problem addressed:")
+    st.write("### Our solution to the problem:")
