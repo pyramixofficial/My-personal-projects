@@ -37,5 +37,7 @@
 
 
 > An important detail to mention is that on the Video trash detection option the model is not always extremely accurate, but it still manages to make decent predictions.
+
+
 ![](git_images/ezgif.com-gif-maker.gif)
 
