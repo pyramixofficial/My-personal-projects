@@ -22,10 +22,11 @@
   
   The Image option works based on already saved images. You need to browse and select an image from your device and afterwards the model will return you the image with identified trash objects.
   
+![](git_images/camera_option.png)
+  
   Besides that, the user has an option of exporting the data in a csv file, where he can get: the number of identified objects, the coordinated for the two points that form the square in which the identified object is placed, the probability of the detection and the type of the identified object.
   
-  
-![](git_images/camera_option.png)
+  ![](git_images/data_saving.png)
   
   ---
 
