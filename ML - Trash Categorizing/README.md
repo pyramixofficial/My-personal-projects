@@ -22,7 +22,7 @@
   
   The Image option works based on already saved images. You need to browse and select an image from your device and afterwards the model will return you the image with identified trash objects.
   
-![](git_images/camera_option.png)
+![](git_images/image_option.png)
   
   Besides that, the user has an option of exporting the data in a csv file, where he can get: the number of identified objects, the coordinated for the two points that form the square in which the identified object is placed, the probability of the detection and the type of the identified object.
   
@@ -34,7 +34,7 @@
   
   This part of the project is extremely simple and useful. First of all make sure that you have a camera on your device, afterwards, check the box Run to start the project and allow your camera to be used. Then a window with the live dstribution of the camera will appear below and you will be able to see the identified results instantly.
   
-![](git_images/image_option.png)
+![](git_images/camera_option.png)
 
 
 > An important detail to mention is that on the Video trash detection option the model is not always extremely accurate, but it still manages to make decent predictions.
