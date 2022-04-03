@@ -18,7 +18,7 @@ model = torch.hub.load(r"D:\My-personal-projects\My-personal-projects\ML - Trash
 ##########
 
 # Add in location to select image.
-logo = Image.open(r'D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\imagees\tekwill_logo.png')
+logo = Image.open(r'D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\images\tekwill_logo.png')
 st.sidebar.image(logo, use_column_width=True)
 st.sidebar.write('#### Select the app mode you want to use.')
 
