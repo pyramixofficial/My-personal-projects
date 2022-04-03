@@ -13,10 +13,6 @@ import pandas as pd
 model = torch.hub.load(r"D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\yolov5-master", 'custom', path=r"D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\yolov5 training weights\second.pt", source = 'local', force_reload=True)
 
 
-##########
-##### Set up sidebar.
-##########
-
 # Add in location to select image.
 logo = Image.open(r'D:\My-personal-projects\My-personal-projects\ML - Trash Categorizing\images\tekwill_logo.png')
 st.sidebar.image(logo, use_column_width=True)
@@ -25,6 +21,8 @@ st.sidebar.write('#### Select the app mode you want to use.')
 #creating the mode choice button
 mode = ["About", "Photo", "Camera detection"]
 choice = st.sidebar.selectbox("Select Activity", mode)
+
+
 if choice == "Photo":
     st.sidebar.write('#### Select an image to upload.')
 
@@ -101,6 +99,33 @@ elif choice == "Camera detection":
 #The description page of the project
 elif choice == "About":
     st.write("# Tekwill Junior Ambassadors ")
-    st.write("### This is a project created by Eduard Balamatiuc and Daria Gheorghieș")
+    st.write("###### This is a project created by Eduard Balamatiuc and Daria Gheorghieș ")
+    st.write("---")
     st.write("### The problem addressed:")
-    st.write("### Our solution to the problem:")
+    st.write("Serious pollution of the environment, which leads to damage to human health and the quality of ecosystems is a major problem today. Large unmonitored areas and overcrowded with waste are red areas that indirectly end up causing diseases that sometimes lead to deaths.")
+    st.write("---")
+    st.write("### Our solution to the problem")
+    st.write("> Our project represents a tool for trash detection, that can identify the trash types and give you an output with coordinates on what the model has found in the input. Besides that you can get a livetime feed of the identified objects that will be placed inside a square.")
+    st.write("#### There are two possible settings:")
+    st.write("- Image")
+    st.write("The Image option works based on already saved images. You need to browse and select an image from your device and afterwards the model will return you the image with identified trash objects.")
+    st.image("git_images/image_option.png")
+    st.write("Besides that, the user has an option of exporting the data in a csv file, where he can get: the number of identified objects, the coordinated for the two points that form the square in which the identified object is placed, the probability of the detection and the type of the identified object.")
+    st.image("git_images/data_saving.png")
+    st.write("---")
+    st.write("- Video")
+    st.write("  This part of the project is extremely simple and useful. First of all make sure that you have a camera on your device, afterwards, check the box Run to start the project and allow your camera to be used. Then a window with the live dstribution of the camera will appear below and you will be able to see the identified results instantly.")
+    st.image("git_images/camera_option.png")
+    st.write("> An important detail to mention is that on the Video trash detection option the model is not always extremely accurate, but it still manages to make decent predictions.")
+    st.image("git_images/ezgif.com-gif-maker.gif")
+
+
+
+
+
+
+
+
+
+
+
